@@ -1,0 +1,18 @@
+{
+  "name": "tugas5-api-sederhana",
+  "version": "1.0.0",
+  "description": "API sederhana dengan Express.js untuk MAQDIS Academy",
+  "main": "app.js",
+  "author": "Wildan Miladji",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "node test-api.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
