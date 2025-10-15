@@ -1,36 +1,43 @@
 # Tugas 2 - String Concatenation
 
-Menggabungkan 4 variabel string menjadi satu kalimat.
+Tugas yang paling sederhana namun fundamental! Disini saya menggabungkan 4 variabel string menjadi satu kalimat.
 
 ## Deskripsi
-Program sederhana untuk menggabungkan variabel string:
+
+Program sederhana yang menggabungkan variabel-variabel berikut:
 - variable1 = "MAQDIS"
 - variable2 = 'Academy'  
 - variable3 = 'is'
 - variable4 = 'awesome'
 
-## Output
-```
-MAQDIS Academy is awesome
-```
+Output yang dihasilkan: **"MAQDIS Academy is awesome"**
 
 ## Cara Menjalankan
 
-### Node.js
+Saya membuat 2 versi untuk perbandingan:
+
+**Versi JavaScript:**
 ```bash
-cd "Tugas 2"
 node type.js
 ```
 
-### PHP/Lumen
+**Versi PHP:**
 ```bash
-cd "Tugas 2"
 php type.php
 ```
 
-## Files
-- `type.js` - Implementasi untuk Node.js
-- `type.php` - Implementasi untuk PHP/Lumen
+## Yang Saya Pelajari
 
-## Author
-Wildan Miladji
+- String concatenation di JavaScript menggunakan template literals
+- String concatenation di PHP menggunakan operator dot (.)
+- OOP implementation untuk clean code structure
+- Best practices untuk documentation
+
+## Files
+- `type.js` - JavaScript version dengan function dan export
+- `type.php` - PHP version dengan class dan method
+
+Meskipun sederhana, saya tetap menerapkan best practices seperti OOP dan proper documentation!
+
+---
+*Wildan Miladji*

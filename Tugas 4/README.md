@@ -1,47 +1,65 @@
-# Tugas 4 - Looping
+# Tugas 4 - Looping Maju Mundur
 
-Implementasi looping maju dan mundur dengan bilangan genap.
+Implementasi looping maju dan mundur menggunakan bilangan genap. Sederhana namun penting untuk memahami konsep dasar looping.
 
 ## Deskripsi
-Program yang menampilkan:
-- **Looping Pertama** - Menghitung maju dari 2 sampai 20 (bilangan genap)
-- **Looping Kedua** - Menghitung mundur dari 20 sampai 2 (bilangan genap)
 
-## Output
+Dua jenis looping yang diimplementasikan:
+1. **Looping maju** (2 → 20) menggunakan **for loop**
+2. **Looping mundur** (20 → 2) menggunakan **while loop**
+
+Semua menggunakan bilangan genap dengan pesan yang berbeda:
+- Maju: "I love coding" 💻
+- Mundur: "I will become a mobile developer" 📱
+
+## Output yang Dihasilkan
+
 ```
 LOOPING PERTAMA
 2 - I love coding
 4 - I love coding
-6 - I love coding
-8 - I love coding
-10 - I love coding
-12 - I love coding
-14 - I love coding
-16 - I love coding
-18 - I love coding
+...
 20 - I love coding
-LOOPING KEDUA
+
+LOOPING KEDUA  
 20 - I will become a mobile developer
 18 - I will become a mobile developer
-16 - I will become a mobile developer
-14 - I will become a mobile developer
-12 - I will become a mobile developer
-10 - I will become a mobile developer
-8 - I will become a mobile developer
-6 - I will become a mobile developer
-4 - I will become a mobile developer
+...
 2 - I will become a mobile developer
 ```
 
 ## Cara Menjalankan
+
 ```bash
-cd "Tugas 4"
 node looping.js
 ```
 
-## Teknik Looping
-- **For Loop** - Untuk looping maju (increment)
-- **While Loop** - Untuk looping mundur (decrement)
+## Teknik yang Digunakan
 
-## Author
-Wildan Miladji
+**For Loop (Maju):**
+```javascript
+for (let i = 2; i <= 20; i += 2) {
+  // increment by 2 untuk mendapatkan bilangan genap
+}
+```
+
+**While Loop (Mundur):**
+```javascript
+let j = 20;
+while (j >= 2) {
+  // decrement by 2
+  j -= 2;
+}
+```
+
+## Yang Saya Pelajari
+
+- Perbedaan for loop vs while loop
+- Increment dan decrement dengan step tertentu
+- Modular programming dengan functions
+- Clean code structure dan documentation
+
+Meskipun sederhana, saya tetap menerapkan best practices seperti separation of concerns dan proper documentation.
+
+---
+*Wildan Miladji*

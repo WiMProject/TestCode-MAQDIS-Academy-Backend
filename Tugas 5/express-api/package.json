@@ -1,0 +1,21 @@
+{
+  "name": "tugas5-api-sederhana",
+  "version": "1.0.0",
+  "description": "API Sederhana dengan Express.js - Best Practices Version",
+  "main": "app.js",
+  "author": "Wildan Miladji",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

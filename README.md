@@ -1,120 +1,157 @@
-# TestCode MAQDIS Academy
+# TestCode MAQDIS Academy Backend
 
-Backend skill test project untuk MAQDIS Academy yang mencakup berbagai implementasi fundamental programming.
+Halo! Ini adalah project skill test backend development untuk MAQDIS Academy. Saya membuat ini untuk menunjukkan kemampuan programming fundamental yang telah saya pelajari.
 
-## Deskripsi Project
-Repository ini berisi kumpulan tugas backend development yang mendemonstrasikan kemampuan dalam:
-- String manipulation dan concatenation
-- Conditional logic dan game development
-- Looping dan algoritma
-- REST API development dengan Express.js
+## Overview Project
 
-## Struktur Project
+Project ini terdiri dari 4 tugas utama yang mencakup berbagai aspek backend development:
 
 ### Tugas 2 - String Concatenation
-Implementasi penggabungan 4 variabel string menjadi satu kalimat.
-- **File:** `type.js` (Node.js), `type.php` (PHP/Lumen)
-- **Output:** "MAQDIS Academy is awesome"
-- **Teknologi:** JavaScript, PHP
+Tugas pertama yang sederhana namun fundamental, menggabungkan 4 variabel string menjadi satu kalimat "MAQDIS Academy is awesome". Saya implementasikan dalam 2 versi:
+- `type.js` - Versi JavaScript/Node.js
+- `type.php` - Versi PHP untuk Laravel/Lumen
 
-### Tugas 3 - Conditional Logic & Werewolf Game
-Game Werewolf interaktif dengan validasi input dan conditional logic.
-- **File:** `conditional.js`
-- **Features:** Input validation, error handling, interactive game
-- **Teknologi:** Node.js, readline, class-based OOP
+# Tugas 3 - Conditional Logic
 
-### Tugas 4 - Looping Implementation
-Implementasi looping maju dan mundur dengan bilangan genap.
-- **File:** `looping.js`
-- **Features:** For loop (maju), While loop (mundur)
-- **Output:** Sequence 2-20 dan 20-2
-- **Teknologi:** JavaScript loops
+Implementasi conditional logic sederhana untuk validasi input nama dan peran. Program ini mendemonstrasikan penggunaan if-else statement dan input validation sesuai requirement.
+
+### Tugas 4 - Looping
+Implementasi looping maju mundur menggunakan bilangan genap. Sederhana namun penting untuk memahami konsep dasar looping:
+- For loop untuk hitungan maju (2-20)
+- While loop untuk hitungan mundur (20-2)
 
 ### Tugas 5 - API Sederhana
-REST API dengan Express.js menggunakan arsitektur MVC dan best practices.
-- **File:** `app.js` (main), `controllers/`, `routes/`, `middleware/`
-- **Endpoints:** GET /hello, POST /data, DELETE /data, GET /setoran, GET /status
-- **Features:** MVC pattern, error handling, logging, CORS, automated testing
-- **Teknologi:** Express.js, REST API, Node.js HTTP module
+Yang paling kompleks! Membuat REST API menggunakan Express.js dan Lumen dengan:
+- MVC pattern yang proper
+- Error handling dan logging
+- CORS support
+- Clean architecture
 
-## Cara Menjalankan
+## Cara Menjalankan Project
 
-### Prerequisites
-- Node.js (v14 atau lebih baru)
+### Prerequisites:
+- Node.js (minimal v14)
 - npm
-- PHP (untuk Tugas 2)
+- PHP (untuk versi PHP)
+- Git
 
-### Instalasi
+### Clone Repository:
 ```bash
-git clone https://github.com/WiMProject/TestCode-MAQDIS-Academy.git
-cd "TestCode MAQDIS Academy"
+git clone https://github.com/WiMProject/TestCode-MAQDIS-Academy-Backend.git
+cd TestCode-MAQDIS-Academy-Backend
 ```
 
-### Menjalankan Tugas
+### Menjalankan per Tugas:
 
-#### Tugas 2 - String Concatenation
+**Tugas 2:**
 ```bash
 cd "Tugas 2"
-node type.js        # Node.js version
-php type.php        # PHP version
+node type.js     # atau
+php type.php
 ```
 
-#### Tugas 3 - Conditional Logic
+**Tugas 3:**
 ```bash
 cd "Tugas 3"
 node conditional.js
 ```
 
-#### Tugas 4 - Looping
+**Tugas 4:**
 ```bash
 cd "Tugas 4"
 node looping.js
 ```
 
-#### Tugas 5 - API Sederhana
+**Tugas 5:**
 ```bash
-cd "Tugas 5"
-npm install
-npm start
-# Server akan berjalan di http://localhost:3000
+# Express version
+cd "Tugas 5/express-api"
+npm install && npm start
+
+# Lumen version
+cd "Tugas 5/lumen-api"
+composer install
+php -S localhost:8000 -t public
 ```
 
 ## API Endpoints (Tugas 5)
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET    | /hello   | Welcome message |
-| POST   | /data    | Add data |
-| DELETE | /data    | Delete data |
-| GET    | /setoran | Get setoran data |
+| Method | Endpoint | Response |
+|--------|----------|----------|
+| GET | `/hello` | Welcome message |
+| POST | `/data` | Create data |
+| DELETE | `/data` | Delete data |
+| GET | `/setoran` | Get setoran info |
 
-## Teknologi yang Digunakan
-- **JavaScript/Node.js** - Runtime utama
-- **Express.js** - Web framework untuk API
-- **PHP** - Alternative implementation
+## Tech Stack
+
+- **JavaScript/Node.js** - Main language
+- **Express.js** - Web framework
+- **PHP/Lumen** - Alternative implementation
 - **Git** - Version control
-- **npm** - Package manager
 
-## Best Practices Applied
-- Clean code structure dan modular programming
-- Proper error handling dan input validation
-- RESTful API design dengan HTTP status codes
-- MVC architecture pattern (Tugas 5)
-- Automated testing dan documentation
-- Version control dengan Git
+## Tujuan Project
 
-## Author
-**Wildan Miladji**
+Saya ingin menunjukkan bahwa saya mampu:
+- Menulis code yang clean dan maintainable
+- Mengimplementasikan best practices dalam backend development
+- Membuat API yang proper dengan error handling
+- Menggunakan berbagai teknologi (JS, PHP, framework)
+- Membuat dokumentasi yang jelas dan komprehensif
+
+## Screenshots
+
+### Tugas 5 - API Sederhana
+
+Hasil testing API menggunakan Postman untuk semua endpoints:
+
+#### Express.js API Testing
+
+**1. API Info**
+![Express API Info](Hasil%20Screenshoot/express/express1.png)
+
+**2. GET /hello - Welcome Message**
+![Express Hello](Hasil%20Screenshoot/express/express2.png)
+
+**3. POST /data - Create Data**
+![Express Create Data](Hasil%20Screenshoot/express/express3.png)
+
+**4. DELETE /data - Delete Data**
+![Express Delete Data](Hasil%20Screenshoot/express/express4.png)
+
+**5. GET /setoran - Get Setoran**
+![Express Get Setoran](Hasil%20Screenshoot/express/express5.png)
+
+#### Lumen API Testing
+
+**1. API Info**
+![Lumen API Info](Hasil%20Screenshoot/lumen/lumen1.png)
+
+**2. GET /hello - Welcome Message**
+![Lumen Hello](Hasil%20Screenshoot/lumen/lumen2.png)
+
+**3. POST /data - Create Data**
+![Lumen Create Data](Hasil%20Screenshoot/lumen/lumen3.png)
+
+**4. DELETE /data - Delete Data**
+![Lumen Delete Data](Hasil%20Screenshoot/lumen/lumen4.png)
+
+**5. GET /setoran - Get Setoran**
+![Lumen Get Setoran](Hasil%20Screenshoot/lumen/lumen5.png)
 
 ## Testing
 
-### Tugas 5 - API Testing
+Untuk testing API:
 ```bash
-cd "Tugas 5"
-npm install
-npm start     # Start server
-npm test      # Run automated tests (di terminal lain)
+# Test Express API
+curl http://localhost:3000/hello
+
+# Test Lumen API  
+curl http://localhost:8000/hello
 ```
 
-## Repository
-[GitHub Repository](https://github.com/WiMProject/TestCode-MAQDIS-Academy.git)
+---
+
+**Dibuat oleh Wildan Miladji**
+
+Jika ada pertanyaan atau feedback, silakan hubungi saya.
